@@ -1,0 +1,118 @@
+.home{
+    background-color: #ecf0f1;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px !important;
+}
+.banner{
+    /* margin-top: 2rem; */
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.offer_banner{
+margin-top: 1.3rem;
+border-radius: 3px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.banner_below_btn{
+    cursor: pointer !important;
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 50px;
+    /* padding: 0.8rem; */
+    /* padding-left: 3rem;
+    padding-right: 3rem; */
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #ee4054;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.banner_below_btn:hover{
+    color:#ffffff;
+    background-color: #ee4054;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+
+
+.deals_title{
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+}
+/* .fa-heart{
+    border: solid red;
+} */
+.card{
+    position: relative;
+    margin-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card_icons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.overlay_icons{
+    font-size: 20px;
+    cursor: pointer;
+    color: #ee4054;
+    padding: 0.5rem;
+    transition: 0.2s;
+
+}
+.overlay_icons:hover{
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.card-body .card-title{
+    font-size: 16px !important;
+    font-weight: 600;
+    /* color: red; */
+}
+.card-body .card-text{
+    font-size: 14px !important;
+    font-weight: 600;
+
+    /* color: red; */
+}
+
+ .card_btn{
+    cursor: pointer !important;
+    outline: none;
+    border: none;
+    padding: 0.3rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #ee4054;
+    border-radius: 3px;
+}
+.card_btn:hover{
+    color:#ffffff;
+    background-color: #ee4054;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.bg-ptag{
+    background-color:rgba(255, 255, 255, 1) ;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    .offer_banner{
+        margin-top: 0.5rem;
+   
+        }
+}

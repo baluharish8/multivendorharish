@@ -1,0 +1,89 @@
+.footer{
+    background-color: #ee4054;
+    font-family: 'Barlow', sans-serif;
+    font-size: 14px ;
+color: #ffffff;
+}
+.footer_title{
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+.icon{
+    font-size: 19px;
+    background: #fff;
+    color: #ee4054;
+    /* line-height: 1; */
+    /* padding: 8px 0; */
+    /* padding: 8px 0 0px 0; */
+    padding-top: 8px;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+.icon:hover{
+    /* background-color:  #37b3ed; */
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d73a4d;
+    color: #ffffff;
+
+}
+.company{
+    display: inline-block;
+    padding-top: 1rem ;
+}
+.footer_btn {
+    display: inline-block;
+color: #ffffff;
+    /* color: rgba(255, 255, 255, 0.8); */
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+
+}
+
+.footer_btn:hover {
+    color: #ffffff;
+}
+.chat_icon{
+    font-size: 35px;
+    background: #fff;
+    color: #ee4054;
+    /* line-height: 1; */
+    /* padding: 18px; */
+    padding: 20px 22px 20px 22px;
+    /* padding-top: 20px; */
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    text-align: center;
+    width: 46px;
+    height: 46px;
+    transition: 0.3s;
+}
+.chat_icon:hover{
+    /* background-color:  #37b3ed; */
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #d73a4d;
+    color: #ffffff;
+
+}
+
+
+/* @media only screen and (min-width: 768px) { */
+
+    /* Change the flex direction to column for small screens */
+    /* .button_div { */
+        /* white-space: nowrap; */
+    /* } */
+/* } */

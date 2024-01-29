@@ -1,0 +1,216 @@
+.header_div {
+    width: 100% !important;
+    /* height: 100vh; */
+    /* position: fixed; */
+    /* overflow: hidden; */
+    /* overflow-y: scroll;  dont use scroll here it makes display wave*/
+
+}
+
+.header{
+    width: 100%;
+    /* border: solid 1px red; */
+    /* position: fixed; */
+    height: auto;
+    font-size: 14px;
+    font-family: 'Barlow', sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    /* background: rgba(59, 72, 211, 0.704); */
+    background-color: #d73a4d;
+    z-index: 2;
+   
+}
+
+.header1 {
+    /* width: 100%; */
+    /* border: solid 1px red; */
+    width: 100% !important;
+
+    height: auto;
+    color: #ffffff;
+    /* height: 74px; */
+    background-color: #ee4054;
+  
+}
+
+.header2 {
+    width: 100%;
+    /* border: solid 1px red; */
+    border-top: 1px solid #ffffff4f;
+    height: auto;
+    color: #ffffff;
+    /* background:  #000061c7; */
+    background-color: #ee4054;
+
+}
+
+.header_btn {
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+
+}
+
+.header_btn:hover {
+    color: #ffffff;
+}
+
+.header_span {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.header_span:hover {
+    color: #ffffff;
+
+}
+
+.form-control {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-color: none;
+    border-radius: 0px;
+}
+
+.form-control:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-color: none;
+    border-radius: 0px;
+
+}
+
+.btn_search {
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #ee4054;
+    border-radius: 50%;
+    margin-right: -6px !important;
+}
+
+.logo_image {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.logo_name {
+    font-size: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.menu_nav_icon {
+    display: none;
+    font-size: 25px;
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.header2_btn {
+    color: #ffffff;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    white-space: nowrap;
+    border-radius: 2px;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+}
+
+.header2_btn:hover {
+    display: inline-block;
+    color: #ee4054;
+    background-color: #ffffff;
+}
+
+
+.header2_btn_div {
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 5rem;
+    list-style: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Change the flex direction to column for small screens */
+    .header {
+        height: auto;
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    /* Change the flex direction to column for small screens */
+    .header {
+        height: auto;
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Change the flex direction to column for small screens */
+    .button_div {
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    /* here nav menu flex direction changes and this class added conditionally and set default class d-none  */
+    .header2_btn_div_show {
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: -0.7rem;
+        list-style: none;
+    }
+    .header2_btn_div {
+        display: none;
+    }
+    .menu_nav_icon {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+    /* after this width these 2 classes are set to lg values(or default navigation on lg) */
+    .header2_btn_div_show {
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: 5rem;
+        list-style: none;
+    }
+
+    .header2_btn_div {
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: 5rem;
+        list-style: none;
+    }
+
+}
