@@ -1,7 +1,8 @@
 import "./home.component.css"
 import card1 from "../../assets/images/cartimg-1.png"
 import fpimg1 from "../../assets/images/fpimg-1.png"
-import banner from "../../assets/images/bannerMirror.png"
+import banner from "../../assets/images/bannerMir.png"
+import banner2 from "../../assets/images/banner2Mir.png"
 import offerbanner1 from "../../assets/images/offbanner1.jpg"
 import offerbanner2 from "../../assets/images/offbanner2.jpg"
 
@@ -14,7 +15,28 @@ export function HomeComponent() {
                 <div className="container-fluid shadow ps-4">
                     <div className="row ">
                         <div className="col-12 col-md-12  col-lg-8 mt-4">
-                            <img className="img-fluid banner" src={banner} alt="Card  cap" />
+                            {/* <img className="img-fluid banner" src={banner} alt="Card  cap" /> */}
+                            <div id="carouselExampleAutoplaying" className="carousel slide banner" data-bs-ride="carousel" data-bs-interval="1000">
+                                <div className="carousel-inner">
+                                    <div className="carousel-item active">
+                                        <img src={banner} className="d-block w-100" alt="..." />
+                                    </div>
+                                    <div className="carousel-item">
+                                        <img src={banner2} className="d-block w-100" alt="..." />
+                                    </div>
+                                    {/* <div className="carousel-item">
+                                        <img src={banner} className="d-block w-100" alt="..." />
+                                    </div> */}
+                                </div>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                         <div className="col-12   col-lg-4 mt-4">
 
@@ -49,9 +71,9 @@ export function HomeComponent() {
                             <h6 className="deals_title ">Deals of the Day</h6>
 
                         </div>
-                            <div className="col-auto col-sm-6 col-md-2  text-end">
-                                <h6 className="deals_title ">View More <span> <i className="fa-solid fa-angle-right"></i> </span><span> <i className="fa-solid fa-angle-right"></i> </span></h6>
-                            </div>
+                        <div className="col-auto col-sm-6 col-md-2  text-end">
+                            <h6 className="deals_title ">View More <span> <i className="fa-solid fa-angle-right"></i> </span><span> <i className="fa-solid fa-angle-right"></i> </span></h6>
+                        </div>
                     </div>
 
 
@@ -156,11 +178,11 @@ export function HomeComponent() {
                 <div className="container-fluid p-4">
                     <div className="row">
                         <div className="col-auto col-sm-6 col-md-10">
-                        <h6 className="deals_title ">Featured Products</h6>
+                            <h6 className="deals_title ">Featured Products</h6>
                         </div>
-                            <div className="col-auto col-sm-6 col-md-2  text-end">
-                                <h6 className="deals_title ">View More <span> <i className="fa-solid fa-angle-right"></i> </span><span> <i className="fa-solid fa-angle-right"></i> </span></h6>
-                            </div>
+                        <div className="col-auto col-sm-6 col-md-2  text-end">
+                            <h6 className="deals_title ">View More <span> <i className="fa-solid fa-angle-right"></i> </span><span> <i className="fa-solid fa-angle-right"></i> </span></h6>
+                        </div>
                     </div>
 
                     <div className="row ">

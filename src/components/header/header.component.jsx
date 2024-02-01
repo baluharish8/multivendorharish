@@ -51,7 +51,7 @@ export function HeaderComponent() {
                             </div>
                             <div className="d-flex  align-items-center   bg-light rounded-pill col-md-6 col-lg-6 mt-2 mb-2">
                                 <i className="fas fa-search ps-3 text-secondary" aria-hidden="true"></i>
-                                <input class="form-control " type="text" placeholder="Search" />
+                                <input className="form-control " type="text" placeholder="Search" />
                                 <button className="btn_search mt-1 mb-1 "><i className="fas fa-search " aria-hidden="true"></i></button>
                             </div>
                             
