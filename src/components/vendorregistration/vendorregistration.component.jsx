@@ -17,20 +17,7 @@ export function VendorRegistrationComponent() {
             firstName: document.getElementById("firstName").value,
             lastName: document.getElementById("lastName").value,
             password: document.getElementById("password").value,
-            // gender: getGender(),
         }
-
-        // function getGender() {
-        //     let gender = document.getElementsByName("gender")
-        //     for (let i = 0; i < gender.length - 1; i++) {
-        //         if (gender[i].checked) {
-        //             console.log(gender[i].value)
-        //             return gender[i].value
-        //         }
-        //         else { alert("gender not select") }
-        //     }
-        // }
-
         // saveUserData(data)
         saveVendorData(data)
             .then((res) => {
@@ -64,8 +51,7 @@ export function VendorRegistrationComponent() {
             document.getElementById("password2").value = ""
 
         }
-        // gettingData(data)
-        // storedData(data.file)
+        
     }
     return (
         <>
@@ -85,7 +71,7 @@ export function VendorRegistrationComponent() {
                                 value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
                                 message: 'Please enter a valid email',
                             }
-                        })} className="Input-boxes-R  " placeholder="Email" id="email"></input>
+                        })} className="input-registration  " placeholder="Email" id="email"></input>
                         {
                             errors.email && errors.email.type === "required" ? <span className="text-danger">Please enter Email</span> :
 
@@ -93,7 +79,7 @@ export function VendorRegistrationComponent() {
                         }
                     </div>
                     <div className="">
-                        <input type="text" {...register("firstName", { required: true, minLength: 3, maxLength: 15 })} className="Input-boxes-R" placeholder="FirstName" id="firstName"></input>
+                        <input type="text" {...register("firstName", { required: true, minLength: 3, maxLength: 15 })} className="input-registration" placeholder="FirstName" id="firstName"></input>
                         {
                             errors.firstName && errors.firstName.type === "required" ? <span className="text-danger">Please enter firstname</span> :
                                 errors.firstName && errors.firstName.type === "minLength" ? <span className="text-danger">Please enter atleast 3 char</span> :
@@ -102,7 +88,7 @@ export function VendorRegistrationComponent() {
                         }
                     </div>
                     <div className="">
-                        <input type="text" {...register("lastName", { required: true, minLength: 3, maxLength: 15 })} className="Input-boxes-R" placeholder="LastName" id="lastName"></input>
+                        <input type="text" {...register("lastName", { required: true, minLength: 3, maxLength: 15 })} className="input-registration" placeholder="LastName" id="lastName"></input>
                         {
                             errors.lastName && errors.lastName.type === "required" ? <span className="text-danger">Please enter lastname</span> :
                                 errors.lastName && errors.lastName.type === "minLength" ? <span className="text-danger">Please enter atleast 3 char</span> :
@@ -118,7 +104,7 @@ export function VendorRegistrationComponent() {
                                 value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=])[a-zA-Z\d@#$%^&+=]{8,}$/,  //This password contains at least one uppercase letter, one lowercase letter, one digit, and one special character, and it's 8 characters long
                                 message: 'contains at least one uppercase letter, one lowercase letter, one digit, one special character and 8 characters',
                             }
-                        })} className="Input-boxes-R" placeholder="Password" id="password"  ></input>
+                        })} className="input-registration" placeholder="Password" id="password"  ></input>
                         {
                             errors.passcode && errors.passcode.type === "required" ? <span className="text-danger">Please enter password</span> :
 
@@ -129,16 +115,12 @@ export function VendorRegistrationComponent() {
                     <div className="">
                         <input type="password" {...register("passcode2", {
                             required: true,
-                            // pattern: {
-                            //     value: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&+=])[a-zA-Z\d@#$%^&+=]{8,}$/,  //This password contains at least one uppercase letter, one lowercase letter, one digit, and one special character, and it's 8 characters long
-                            //     message: 'contains at least one uppercase letter, one lowercase letter, one digit, one special character and 8 characters',
-                            // },
                             validate: (val) => {
                                 if (watch('passcode') != val) {
                                     return "Your passwords do no match";
                                 }
                             },
-                        })} className="Input-boxes-R  " placeholder="Confirm password" id="password2"  ></input>
+                        })} className="input-registration  " placeholder="Confirm password" id="password2"  ></input>
                         {
                             errors.passcode2 && errors.passcode2.type === "required" ? <span className="text-danger">Please enter Confirm password</span> :
                                 // errors.passcode2 && errors.passcode2.type === "pattern" ? <span className="text-danger">{errors.passcode2.message}</span> : 

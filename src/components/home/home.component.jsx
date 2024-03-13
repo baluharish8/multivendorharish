@@ -107,48 +107,14 @@ export function HomeComponent(props) {
                     <FeaturedServicesComponent handleSearchCardData={props.handleSearchCardData}></FeaturedServicesComponent>
 
                     <div>
-                        {/* <div className="card" style={{ width: "18rem" }} >
-                            <img className="card-img-top " src={card1} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="featured_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <p className="featured_price text-center">$250</p>
-                                    <div className="text-center">
-                                        <button className="featured_btn ">Book Appointment </button>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
+         
                     </div>
 
 
 
                 </div>
 
-                {/* <div className="text-center text-danger">
-    {
-        data.map((item)=>{
-            <ul key={item.id}>
-                <li>{console.log(item.simage)}</li>
-                <li>{item.id}</li>
 
-            </ul>
-        })
-    }
-</div> */}
                 <div className="container-fluid p-4 mt-5">
                     <div className="text-center pt-4 pb-4 "> <span className="category_text">Popular </span><span className="browse_text"> Services </span>  </div>
 
@@ -159,7 +125,7 @@ export function HomeComponent(props) {
                         {
                             data.slice(-8).map((item) => {
                                 const base64String = btoa(String.fromCharCode(...new Uint8Array(item.serviceimages.data)))
-                                return <div className="col-12 col-sm-6 col-md-4 col-lg-3">
+                                return <div className="col-12 col-sm-6 col-md-4 col-lg-3" key={item._id}>
                                     <div className="card popular_card_style"  onClick={()=>{handleCardClick(item)}}>
                                         {/* <img className="card-img-top " src={hairservice} alt="Card  cap1" /> */}
                                         <img src={`data:image/jpeg;base64,${item.serviceimages}`} alt='imgnot' className="card-img-top"></img>
@@ -203,288 +169,12 @@ export function HomeComponent(props) {
                 </div>
                 <div className="container p-4 pt-0">
 
-                    {/* <div className="row ">
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="card"  >
-                            <img className="card-img-top " src={hairservice} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="popular_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <div className="pt-2">Rating</div>
-                                    <div className="d-flex justify-content-around align-items-center pt-4 pb-2">
-
-                                        <div>
-                                            <span className="popular_price text-center">$250</span>
-                                        </div>
-                                        <div>
-                                            <button className="popular_btn ">Book Now</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="card"  >
-                            <img className="card-img-top " src={card2} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="popular_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <div className="pt-2">Rating</div>
-                                    <div className="d-flex justify-content-around align-items-center pt-4 pb-2">
-
-                                        <div>
-                                            <span className="popular_price text-center">$250</span>
-                                        </div>
-                                        <div>
-                                            <button className="popular_btn ">Book Now</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="card"  >
-                            <img className="card-img-top " src={card3} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="popular_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <div className="pt-2">Rating</div>
-                                    <div className="d-flex justify-content-around align-items-center pt-4 pb-2">
-
-                                        <div>
-                                            <span className="popular_price text-center">$250</span>
-                                        </div>
-                                        <div>
-                                            <button className="popular_btn ">Book Now</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="card"  >
-                            <img className="card-img-top " src={card4} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="popular_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <div className="pt-2">Rating</div>
-                                    <div className="d-flex justify-content-around align-items-center pt-4 pb-2">
-
-                                        <div>
-                                            <span className="popular_price text-center">$250</span>
-                                        </div>
-                                        <div>
-                                            <button className="popular_btn ">Book Now</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div> */}
+     
 
                 </div>
                 <div className="container p-4 pt-0">
 
-                    {/* <div className="row ">
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="card"  >
-                            <img className="card-img-top " src={card5} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="popular_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <div className="pt-2">Rating</div>
-                                    <div className="d-flex justify-content-around align-items-center pt-4 pb-2">
-
-                                        <div>
-                                            <span className="popular_price text-center">$250</span>
-                                        </div>
-                                        <div>
-                                            <button className="popular_btn ">Book Now</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="card"  >
-                            <img className="card-img-top " src={card3} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="popular_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <div className="pt-2">Rating</div>
-                                    <div className="d-flex justify-content-around align-items-center pt-4 pb-2">
-
-                                        <div>
-                                            <span className="popular_price text-center">$250</span>
-                                        </div>
-                                        <div>
-                                            <button className="popular_btn ">Book Now</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="card"  >
-                            <img className="card-img-top " src={card2} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="popular_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <div className="pt-2">Rating</div>
-                                    <div className="d-flex justify-content-around align-items-center pt-4 pb-2">
-
-                                        <div>
-                                            <span className="popular_price text-center">$250</span>
-                                        </div>
-                                        <div>
-                                            <button className="popular_btn ">Book Now</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div className="card"  >
-                            <img className="card-img-top " src={card1} alt="Card  cap1" />
-                            <div className="card_icons">
-                                <div className="d-flex justify-content-end">
-                                    <span>
-                                        <i className="fa fa-plus-circle  overlay_icons"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fa-solid fa-heart  overlay_icons"></i>
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div className="card-body ">
-                                <div className="">
-                                    <p className="card-title">Default Product Name</p>
-                                    <span className="popular_text">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export </span>
-                                    <div className="pt-2">Rating</div>
-                                    <div className="d-flex justify-content-around align-items-center pt-4 pb-2">
-
-                                        <div>
-                                            <span className="popular_price text-center">$250</span>
-                                        </div>
-                                        <div>
-                                            <button className="popular_btn ">Book Now</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div> */}
+                  
                     <div className="text-center mt-4">
                         <button className="explore_btn">Explore More</button>
                     </div>

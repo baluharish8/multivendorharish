@@ -3,31 +3,6 @@ import { getLocalStorageItem, setLocalStorageItem } from "./storages/local.stora
 import { Navigate } from "react-router-dom";
 import store from "./storages/redux.storage";
 export function AuthRouteVendor(props) {
-const [recheck,setRecheck]=useState('')
-// const [uservalid,setUservalid]=useState(false)
-
-useEffect(()=>{
-    
-        //after login profile show execute(vendor)
-        // const vendorData = store?.getState()?.vendorData;
-        // console.log('from authroute',vendorData)
-        // let isVendorLoggedIn = vendorData ? true : false;
-        // console.log('from authroute',isVendorLoggedIn)
-        // setUservalid(isVendorLoggedIn)
-
-        // store.subscribe(() => {
-        //     const vendorData = store.getState().vendorData;
-        //     console.log("from logout testing UserData:", vendorData);
-        //     let isVendorLoggedIn = vendorData ? true : false;
-        //     console.log("from logout testing UserData:", isVendorLoggedIn);
-        //     setUservalid(isVendorLoggedIn)
-        //   });
-
-},[])
-
-// console.log('from authroute uservalid',uservalid)
-
-
 
     let uservalid = false;
     // uservalid = getLocalStorageItem("vendorData")

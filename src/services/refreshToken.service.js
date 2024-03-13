@@ -16,22 +16,7 @@ let expiredToken;
     });
 
     const refresh =  async() => {
-        // await axios.get('http://localhost:4006/refresh', {withCredentials: true })
-        //  .then((response)=>{
-
-        //     console.log('from refresh : '+response.data.accessToken)
-        //         return response.data.accessToken;
-        //  })
-        //  .catch((error)=>{
-        //     if(error?.response?.status === 403){
-        //         expiredToken=error.response
-        //     console.error(error.response.data +'' + "from BE"); 
-        //     removeLocalStorageItem("vendortoken")
-        //     navigate('/login')
-        //       } else {
-        //         console.error('An error occurred:', error.message);
-        //       }
-        //  })
+ 
         try {
             const response = await axios.get('http://localhost:4006/refresh', { withCredentials: true });
             console.log('from refresh : ' + response.data.accessToken);
