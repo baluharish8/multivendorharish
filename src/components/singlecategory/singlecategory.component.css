@@ -1,0 +1,62 @@
+.popular_card_style:hover{
+    cursor: pointer;
+}
+.popular_card_rating{
+    display: inline-block;
+    border-radius: 4px;
+    /* padding: 0.3rem; */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    opacity: 0.9;
+    background-color: #fd5e47;
+    font-size: 16px;
+    color: #ffffff;
+
+  }
+  .overlay_icons{
+    font-size: 20px;
+    cursor: pointer;
+    color: #ee4054;
+    padding: 0.5rem;
+    transition: 0.2s;
+
+}
+.overlay_icons:hover{
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.card_icons{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.popular_text{
+    font-size: 14px !important;
+
+}
+.popular_price{
+    color: #fd5e47;
+    /* font-size: 14px !important; */
+    font-weight: 700;
+    margin-top: 1rem;
+    
+}
+.popular_btn{
+    cursor: pointer !important;
+    outline: none;
+    border: none;
+    padding: 0.3rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #11c393;
+    border-radius: 3px;
+}
+.popular_btn:hover{
+    color:#ffffff;
+    background-color: #11c393;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}

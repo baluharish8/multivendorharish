@@ -1,0 +1,165 @@
+.profile_layout{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card{
+    border: none !important;
+    border-radius: none !important;
+}
+.image_div{
+    background-color: #ad1455;
+}
+.image{
+    /* margin: 15px auto; */
+    /* display: block; */
+    /* width: 120px; */
+    border: 8px solid #2c2f3f;
+}
+.admin_button{
+    border: none;
+    outline: none;
+    font-weight: 700;
+font-size: 14px;
+    color:#ad1455;
+    background-color: transparent;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-text{
+    font-size: 12px;
+}
+.profile_info{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.profile_title{
+    font-size: 14px;
+    font-weight: 700;
+    color: #666666;
+}
+.profile_text{
+    color: #666666;
+    font-size: 12px;
+}
+.icon_size{
+    font-size: 22px;
+}
+.border_bottom{
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+}
+.profile_content{
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.profile_content_buttons{
+    border-bottom: 1px solid rgba(102, 102, 102, 0.2);
+}
+.profile_setting_button{
+    border: none;
+    outline: none;
+    /* width: 100%; */
+    background-color: transparent;
+    color: #33333393;
+    font-size: 14px;
+}
+.profile_setting_button_on{
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333333;
+    background-color: transparent;
+    border-bottom: 2px solid #00BCD4;
+
+}
+
+  .input_styles {
+    width: 100%;
+    /* padding: 10px; */
+    font-size: 14px;
+   color: #555;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00000021;
+
+  }
+  .input_styles:focus{
+    border-bottom: 2px solid #00BCD4;
+  }
+
+  /* .input_name:focus,
+    .input_name:not(:placeholder-shown) {
+        border-bottom: 2px solid #00BCD4;  */
+        /* Change border color when active or has value */
+    /* } */
+
+  .label_styles {
+    /* position: absolute;
+    left: 10px;
+    top: 50%; */
+    /* transform moves height of the placeholder */
+    /* transform: translateY(-50%); */
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+    /* pointer-events: none;
+    transition: 0.3s; */
+  }
+/* 
+  .input_name:focus + .label_name,
+  .input_name:not(:placeholder-shown) + .label_name { */
+    /* top: 5px; */
+    /* font-size: 12px;
+    color: #999999;
+
+  } */
+  .update_button{
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 7px 10px 7px 10px;
+    border-radius: 2px;
+    background-color: #00b0e4;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .submit_button{
+    background-color: #fb483a !important;
+  }
+  .select_action_gender{
+    font-size: 13px;
+    border-bottom: 2px solid #00b0e4;
+    /* width: 160px ; */
+    white-space: nowrap;
+
+}
+.select_action_items_gender {
+    position: absolute;
+    top: -350%;
+    /* right: 0; */
+    /* left: 0; */
+    color: rgba(51, 51, 51, 0.89);
+    font-size: 14px;
+    /* text-align: left; */
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+  .select_action_items_gender li {
+    list-style-type: none;
+    padding: 10px 16px 10px 19px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .select_action_items_gender li:hover {
+    background-color: rgba(0, 0, 0, 0.075)
+  }
+  
+  .select_action_items_gender,
+  .select_action_items_gender ul {
+    padding: 0px;
+  }
+  .error_size{
+    font-size: 12px;
+  }

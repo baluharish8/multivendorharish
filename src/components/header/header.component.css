@@ -1,10 +1,13 @@
 .header_div {
     width: 100% !important;
     /* height: 100vh; */
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
+    margin-bottom: 200px;
+    /* bottom: 100px; */
     /* overflow: hidden; */
     /* overflow-y: scroll;  dont use scroll here it makes display wave*/
-
+z-index: 100;
 }
 
 .header{
@@ -30,7 +33,6 @@
     color: #ffffff;
     /* height: 74px; */
     background-color: #ee4054;
-  
 }
 
 .header2 {
@@ -54,7 +56,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     white-space: nowrap;
-
+text-decoration: none;
 }
 
 .header_btn:hover {
@@ -71,7 +73,7 @@
 
 }
 
-.form-control {
+.search_div .form-control {
     outline: none;
     border: none;
     box-shadow: none;
@@ -79,7 +81,7 @@
     border-radius: 0px;
 }
 
-.form-control:focus {
+.search_div .form-control:focus {
     outline: none;
     border: none;
     box-shadow: none;
@@ -111,7 +113,22 @@
     white-space: nowrap;
     cursor: pointer;
 }
-
+.position_div{
+  position: relative;
+    
+}
+.search_data{
+position: absolute;
+top: 65%;
+left: 30%;
+width: 35%;
+}
+.search_data:hover{
+cursor: pointer;
+}
+.search_price{
+    color: #fd5e47;
+}
 .menu_nav_icon {
     display: none;
     font-size: 25px;
@@ -173,7 +190,6 @@
 
 @media only screen and (min-width: 768px) {
 
-    /* Change the flex direction to column for small screens */
     .button_div {
         white-space: nowrap;
     }
