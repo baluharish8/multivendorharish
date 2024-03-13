@@ -66,112 +66,112 @@ function handleCategory(startIndex, endIndex){
             <div className="slider_styles">
                 <Slider {...settings}>
                     <div >
-                        <div class="card text-white text-center category_cart bg_color1" onClick={()=>{handleCategory(3, 6)}}>
+                        <div className="card text-white text-center category_cart bg_color1" onClick={()=>{handleCategory(3, 6)}}>
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ms-0 ps-0">
-                                <h5 class="card-title">Saloon&Spa</h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ms-0 ps-0">
+                                <h5 className="card-title">Saloon&Spa</h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color2" >
+                        <div className="card text-white text-center category_cart bg_color2" >
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ">
-                                <h5 class="card-title">Electronics</h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ">
+                                <h5 className="card-title">Electronics</h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color3" onClick={()=>{handleCategory(0, 3)}}>
+                        <div className="card text-white text-center category_cart bg_color3" onClick={()=>{handleCategory(0, 3)}}>
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ">
-                                <h5 class="card-title">Education </h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ">
+                                <h5 className="card-title">Education </h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color4">
+                        <div className="card text-white text-center category_cart bg_color4">
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ms-0 ps-0">
-                                <h5 class="card-title">RealEstate </h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ms-0 ps-0">
+                                <h5 className="card-title">RealEstate </h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color5">
+                        <div className="card text-white text-center category_cart bg_color5">
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ">
-                                <h5 class="card-title">Cleaning</h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ">
+                                <h5 className="card-title">Cleaning</h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color6" onClick={()=>{handleCategory(6, 9)}}>
+                        <div className="card text-white text-center category_cart bg_color6" onClick={()=>{handleCategory(6, 9)}}>
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ">
-                                <h5 class="card-title">Repair </h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ">
+                                <h5 className="card-title">Repair </h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color7">
+                        <div className="card text-white text-center category_cart bg_color7">
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ">
-                                <h5 class="card-title">Electric </h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ">
+                                <h5 className="card-title">Electric </h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color8">
+                        <div className="card text-white text-center category_cart bg_color8">
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ms-0 ps-0">
-                                <h5 class="card-title">Home&Move</h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ms-0 ps-0">
+                                <h5 className="card-title">Home&Move</h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color9">
+                        <div className="card text-white text-center category_cart bg_color9">
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ">
-                                <h5 class="card-title">Plumbers</h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ">
+                                <h5 className="card-title">Plumbers</h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <div class="card text-white text-center category_cart bg_color10">
+                        <div className="card text-white text-center category_cart bg_color10">
                             <span className="pt-3">
                                 <i className="fa-solid fa-broom category-icon"></i>
                             </span>
-                            <div class="card-body ">
-                                <h5 class="card-title">Painting</h5>
-                                <p class="card-text">3+ Services</p>
+                            <div className="card-body ">
+                                <h5 className="card-title">Painting</h5>
+                                <p className="card-text">3+ Services</p>
                             </div>
                         </div>
                     </div>

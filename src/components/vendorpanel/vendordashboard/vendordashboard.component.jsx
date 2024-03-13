@@ -15,15 +15,7 @@ export function VendorDashboardComponent(props) {
 
     let navigate = useNavigate()
     const [projectGridBodyData, setProjectGridBodyData] = useState([])
-    // const [recheck,setRecheck]=useState('')
-    // useEffect(()=>{
-    //     console.log(recheck)
-    // },[recheck])
-    // store.subscribe(()=>{
-    //     let data=store.getState().userData;
-    //     setRecheck(data)
-    // })
-    // console.log(store.getState());
+
 
     const refresh = async () => {
         const response = await axios.get('http://localhost:4006/refresh', {
@@ -68,7 +60,6 @@ export function VendorDashboardComponent(props) {
                 <div className="container-fluid">
                     <div>
                         <h2>Dashboard</h2>
-                        <button className='btn btn-primary' onClick={() => { refresh() }}>refresh token</button>
 
                     </div>
                     <div className="row  mt-3 ">
@@ -108,8 +99,6 @@ export function VendorDashboardComponent(props) {
                                 </div>
                             </div>
                         </div>
-                        {/* </div> */}
-                        {/* <div className="row  mt-4 mb-3"> */}
 
                     </div>
                 </div>

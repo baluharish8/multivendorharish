@@ -21,10 +21,7 @@ export function LoginComponent(props) {
 
     axios.defaults.withCredentials = true;
     let navigate = useNavigate()
-    // useEffect(() => {
 
-    //     store.dispatch({type:"userData", data:null})
-    // }, [])
 
     useEffect(() => {
         // store.dispatch({type:"userData", data:null})
@@ -53,45 +50,27 @@ export function LoginComponent(props) {
                 })
                 .catch((error) => {
                     alert(error)
-                    // if (error.response && error.response.status === 400) {
-                    //     console.error(error.response.data);
-                    //     alert(error.response.data + "msg from BE")
-                    // } else {
-                    //     console.error('An error occurred:', error.message);
-                    // }
-                    // if (error.response && error.response.status === 500) {
-                    //     console.error(error.response.data);
-                    //     alert(error.response.data + "msg from")
-                    //     removeLocalStorageItem("vendortoken")
-                    //     navigate('/login')
-                    // } else {
-                    //     console.error('An error occurred:', error.message + "at else");
-                    // }
+                    if (error.response && error.response.status === 400) {
+                        console.error(error.response.data);
+                        alert(error.response.data + "msg from BE")
+                    } else {
+                        console.error('An error occurred:', error.message);
+                    }
+                    if (error.response && error.response.status === 500) {
+                        console.error(error.response.data);
+                        alert(error.response.data + "msg from")
+                        removeLocalStorageItem("vendortoken")
+                        navigate('/login')
+                    } else {
+                        console.error('An error occurred:', error.message + "at else");
+                    }
                 })
 
             // navigate("/")
 
         }
     }, []);
-    function handleUpload() {
-        let fileInput = document.getElementById("serviceimages");
-        let file = fileInput.files[0];
 
-        if (file) {
-            let formData = new FormData();
-            formData.append("serviceimages", file);
-            saveImageData(formData)
-                .then((res) => {
-                    console.log(res)
-                    alert("success")
-                })
-                .catch((res) => {
-                    alert(res + " \n" + "user not exist")
-                })
-
-        }
-
-    }
 
     function getRegisteredUser() {
         if (email !== '' && password !== '') {
@@ -141,37 +120,12 @@ export function LoginComponent(props) {
         }
 
     }
-    function handleDownload() {
-        getServiceData()
-            .then((res) => {
-                // setImg(res.data)
-                console.log(res.data[0].serviceimages.data)
-                alert("success")
-            })
-            .catch((res) => {
-                alert(res + " \n" + "user not exist")
-            })
-    }
-    const arrayBufferToBase64 = (buffer) => {
-        let binary = '';
-        const bytes = new Uint8Array(buffer);
-        for (let i = 0; i < bytes.byteLength; i++) {
-            binary += String.fromCharCode(bytes[i]);
-        }
-        return btoa(binary);
-    };
+
     // const base64String1= btoa( String.fromCharCode(...new Uint8Array(img[0].serviceimages.data)))
     // <img src={`data:image/jpeg;base64,${base64String1}`} alt='imgnot'></img> 
 
     function handleGoogleSignIn() {
-        // googleAuth()
-        // .then((res) => {
-        //     alert("success")
-        // })
-        // .catch((res) => {
-        //     alert(res )
-        // })
-
+   
         window.open("http://localhost:4006/userdata/auth/google", "_self")
     }
 

@@ -36,9 +36,7 @@ export function AppRouter() {
     function handleSliceIndex(startIndex, endIndex) {
 setSliceIndex([startIndex, endIndex])
     }
-    // useEffect(()=>{
-    //     console.log(searchCardData)
-    // },[searchCardData])
+ 
     return (
         <>
             <Routes>
