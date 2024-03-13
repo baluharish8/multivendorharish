@@ -1,0 +1,61 @@
+.featured_slider_styles{
+    /* border: solid; */
+    width: 75%;
+    /* text-align: center; */
+    /* box-shadow: none;
+    border: none; */
+}
+
+.browse_text{
+    font-weight: 900;
+}
+.category_text{
+    color: #11c393;
+    font-weight: 900;
+
+}
+.featured_btn{
+    
+    cursor: pointer !important;
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.8);
+    background-color:#11c393;
+    border-radius: 3px;
+}
+.featured_btn:hover{
+    color:#ffffff;
+    background-color: #11c393;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.featured_text{
+    font-size: 14px !important;
+
+}
+.featured_price{
+    color: #fd5e47;
+    /* font-size: 14px !important; */
+    font-weight: 700;
+    margin-top: 1rem;
+    
+}
+.featured_card_style:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+
+    /* Change the flex direction to column for small screens */
+    .featured_slider_styles{
+        /* border: solid; */
+        width: 100%;
+        /* text-align: center; */
+        /* box-shadow: none;
+        border: none; */
+    }
+}

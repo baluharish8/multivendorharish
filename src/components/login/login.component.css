@@ -1,0 +1,34 @@
+.login{
+    background-color: #F5F4F3;
+    height: 100vh ;
+}
+
+.login-form{
+    width: 400px;
+
+}
+.signin_btn .btn-primary{
+    width: 100% !important;
+    /* --bs-btn-color:#fff;
+    --bs-btn-bg:#105ef1; */
+}
+.input-tags {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 6%;
+    border-radius: 0.5rem;
+    border: 1px solid #999999;
+  }
+  .google-logo-div{
+     background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .google-logo{
+    width: 30px;
+    height: 30px;
+  }
+  .google-logo-button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }

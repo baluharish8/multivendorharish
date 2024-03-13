@@ -1,0 +1,15 @@
+.star-rating {
+    font-size: 24px;
+  }
+  
+  .star-rating span {
+    cursor: pointer;
+    color: #ddd;
+    margin-right: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .star-rating span.filled {
+    color: #FF6E00;  /* Color for filled stars */
+  }
+  

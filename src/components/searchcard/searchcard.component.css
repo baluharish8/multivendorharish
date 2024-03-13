@@ -1,0 +1,58 @@
+.search_price{
+    color: #fd5e47;
+}
+.mobile__div2__icon {
+    border-radius: 4px;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    /* opacity: 0.9; */
+    /* font-weight: 500; */
+    background-color: #21A326;
+    font-size: smaller;
+  }
+  .rating{
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 8px;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* opacity: 0.9; */
+    /* font-weight: 500; */
+    background-color: #21A326;
+    font-size: 20px;
+  }
+  .review-input{
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+  .anchor-phone{
+    text-decoration: none ; /* Remove underline */
+    background-color: #21A326;
+    padding: 0.5rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    border-radius: 4px;
+    font-weight: 500;
+transition: 1s;
+  }
+
+  .anchor-phone,.btn_review:hover {
+    background-color: rgba(33, 163, 37, 0.8);
+    /* color: #fd5e47; */
+}
+
+.btn_review{
+  outline: none;
+  border: none;
+  background-color: #21A326;
+  color: #ffffff;
+  padding: 0.5rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  border-radius: 4px;
+  font-weight: 500;
+transition: 1s;
+}

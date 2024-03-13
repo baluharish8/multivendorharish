@@ -1,0 +1,21 @@
+.login{
+    background-color: #F5F4F3;
+    height: 100vh ;
+}
+
+.login-form{
+    width: 400px;
+
+}
+.signin_btn .btn-primary{
+    width: 100% !important;
+    /* --bs-btn-color:#fff;
+    --bs-btn-bg:#105ef1; */
+}
+.input-tags {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 6%;
+    border-radius: 0.5rem;
+    border: 1px solid #999999;
+  }
