@@ -129,7 +129,7 @@ export function RegistrationComponent() {
                     </div>
                     <div>
                         <p className="tac mt-5">
-                            By creating an account, I agree to the Justdial Terms and Conditions and
+                            By creating an account, I agree to the Company Terms and Conditions and
                             Privacy Statement.
                         </p>
                     </div>
